@@ -54,45 +54,45 @@ export default function Home() {
           <h1 className="text-5xl font-righteous text-center">
             Informacje kontaktowe
           </h1>
-          <div className="flex items-center justify-center gap-x-32 mt-24">
-            <div className="aspect-[2/1] bg-secondary w-1/4 flex rounded-lg flex-wrap">
+          <div className="flex items-center justify-center sm:gap-x-6 lg:gap-x-16 xl:gap-x-32 mt-24">
+            <div className="aspect-[2/1] bg-secondary w-1/3 xl:w-1/4 flex rounded-lg flex-wrap">
               <IconBox
                 icon="phone"
                 content="+48 504 501 125"
-                pClassName="w-full text-2xl text-center mt-4"
+                pClassName="w-full text-xl 2xl:text-2xl text-center mt-4"
                 iconClassName="mx-auto -rotate-45"
                 size={48}
                 containerClass="items-center justify-center w-full flex-wrap"
               />
-              <p className="text-center w-full text-xl text-main font-montserrat font-bold">
+              <p className="text-center w-full text-xl text-main font-montserrat font-bold mb-2">
                 Numer telefonu
               </p>
             </div>
             <Link
               href="https://www.facebook.com/eliza.major.18"
-              className="aspect-[2/1] w-1/4"
+              className="aspect-[2/1] w-1/3 xl:w-1/4"
             >
               <div className="w-full h-full flex rounded-lg transition-all duration-500 cursor-pointer">
                 <IconBox
                   icon="fb"
                   content="Facebook"
-                  pClassName="w-full text-2xl text-center mt-4 group-hover:text-white"
+                  pClassName="w-full text-xl 2xl:text-2xl text-center mt-4 group-hover:text-white"
                   iconClassName="mx-auto text-blue-600 group-hover:text-white"
                   size={48}
                   containerClass="items-center justify-center w-full flex-wrap hover:bg-blue-600 transition-all group"
                 />
               </div>
             </Link>
-            <div className="aspect-[2/1] bg-secondary w-1/4 flex rounded-lg flex-wrap">
+            <div className="aspect-[2/1] bg-secondary w-1/3 xl:w-1/4 flex rounded-lg flex-wrap">
               <IconBox
                 icon="mail"
                 content="major.eliza997@gmail.com"
-                pClassName="w-full text-2xl text-center mt-4"
+                pClassName="w-full text-xl 2xl:text-2xl text-center mt-4"
                 iconClassName="mx-auto"
                 size={48}
                 containerClass="items-center justify-center w-full flex-wrap"
               />
-              <p className="text-center w-full text-xl text-main font-montserrat font-bold">
+              <p className="text-center w-full text-xl text-main font-montserrat font-bold mb-2">
                 Adres e-mail
               </p>
             </div>
