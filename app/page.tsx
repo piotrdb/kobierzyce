@@ -1,113 +1,105 @@
-import Image from 'next/image'
+import Link from "next/link";
+import ContactButton from "./components/ContactButton";
+import IconBox from "./components/IconBox";
+import PhotoGallery from "./components/PhotoGallery";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="w-full bg-black min-h-[100vh]">
+      <div className="px-12 w-full max-w-[1536px] mx-auto text-secondary ">
+        <div className="w-full text-5xl xl:text-6xl font-righteous py-12 flex justify-between">
+          <div>
+            <h1>Kobierzyce</h1>
+            <h2 className="mt-2 text-2xl xl:text-3xl">
+              Dom do wynajęcia, niedaleko Bielany Wrocławskie
+            </h2>
+          </div>
+          <div className="text-4xl">
+            <ContactButton className="px-6 py-3 bg-secondary text-main rounded-lg hover:bg-accent hover:drop-shadow-glow transition-all duration-500 hover:-translate-y-1" />
+          </div>
+        </div>
+        <PhotoGallery />
+        <div className="mt-24 flex gap-y-3 justify-center gap-x-2 flex-wrap">
+          <IconBox icon="wifi" content="Darmowe Wi-Fi" />
+          <IconBox icon="camera" content="Monitorowany obiekt" />
+          <IconBox icon="kitchen" content="Kuchnia" />
+          <IconBox icon="car" content="Kilka miejsc parkingowych" />
+          <IconBox icon="garden" content="Ogród" />
+          <IconBox icon="shower" content="Dwa prysznice" />
+          <IconBox icon="door" content="Trzy pokoje" />
+          <IconBox icon="bed" content="Osiem Łóżek" />
+          <IconBox icon="stairs" content="Dwupiętrowy" />
+          <IconBox icon="heating" content="Centralne ogrzewanie" />
+          <IconBox icon="laundry" content="Pralka" />
+        </div>
+        <div className="py-24 text-lg font-montserrat text-justify">
+          Zapraszamy do wynajmu domu wolnostojącego w Kobierzycach, usytuowanych
+          kilkanaście kilometrów od Wrocławia. Ten przestronny dom to doskonałe
+          rozwiązanie dla firm poszukujących komfortowych kwater pracowniczych.
+          Z łatwością pomieści od 8 do 12 osób, zapewniając wszystkim komfortowy
+          i przyjazny pobyt. Lokalizacja naszego domu to dobra okazja dla
+          pracujących w okolicznych miejscowościach. Wrocław jest oddalony
+          zaledwie o kilkanaście minut jazdy samochodem, dzięki czemu unikacie
+          Państwo codziennego zgiełku miejskiego, a jednocześnie macie dostęp do
+          wszystkich jego udogodnień. Dodatkowo, w bezpośrednim sąsiedztwie
+          znajdują się Bielany Wrocławskie, kilkanaście kilometrów dalej Kąty
+          Wrocławskie. Dla pracowników, którzy muszą dojeżdżać do tych
+          miejscowości, nasz dom to doskonałe rozwiązanie. Obiekt jest dostępny
+          do wynajmu zarówno na dłuższy okres, jak i na pojedyncze noclegi.
+          Jesteśmy elastyczni i gotowi dostosować się do Państwa potrzeb.
+          Zapraszamy do kontaktu i wynajmu naszego domu, który z pewnością
+          spełni Wasze oczekiwania!
+        </div>
+        <div className="w-full pt-12 pb-64">
+          <h1 className="text-5xl font-righteous text-center">
+            Informacje kontaktowe
+          </h1>
+          <div className="flex items-center justify-center gap-x-32 mt-24">
+            <div className="aspect-[2/1] bg-secondary w-1/4 flex rounded-lg flex-wrap">
+              <IconBox
+                icon="phone"
+                content="+48 504 501 125"
+                pClassName="w-full text-2xl text-center mt-4"
+                iconClassName="mx-auto -rotate-45"
+                size={48}
+                containerClass="items-center justify-center w-full flex-wrap"
+              />
+              <p className="text-center w-full text-xl text-main font-montserrat font-bold">
+                Numer telefonu
+              </p>
+            </div>
+            <Link
+              href="https://www.facebook.com/eliza.major.18"
+              className="aspect-[2/1] w-1/4"
+            >
+              <div className="w-full h-full flex rounded-lg transition-all duration-500 cursor-pointer">
+                <IconBox
+                  icon="fb"
+                  content="Facebook"
+                  pClassName="w-full text-2xl text-center mt-4 group-hover:text-white"
+                  iconClassName="mx-auto text-blue-600 group-hover:text-white"
+                  size={48}
+                  containerClass="items-center justify-center w-full flex-wrap hover:bg-blue-600 transition-all group"
+                />
+              </div>
+            </Link>
+            <div className="aspect-[2/1] bg-secondary w-1/4 flex rounded-lg flex-wrap">
+              <IconBox
+                icon="mail"
+                content="major.eliza997@gmail.com"
+                pClassName="w-full text-2xl text-center mt-4"
+                iconClassName="mx-auto"
+                size={48}
+                containerClass="items-center justify-center w-full flex-wrap"
+              />
+              <p className="text-center w-full text-xl text-main font-montserrat font-bold">
+                Adres e-mail
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <div id="contact" />
+    </div>
+  );
 }
