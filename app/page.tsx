@@ -14,7 +14,7 @@ export default function Home() {
           <div className="text-2xl sm:text-3xl lg:text-4xl order-1 sm:order-none">
             <ContactButton className="mt-4 mb-2 sm:my-0 px-4 py-2 md:px-6 md:py-3 bg-secondary text-main rounded-lg hover:bg-accent hover:drop-shadow-glow transition-all duration-500 hover:-translate-y-1" />
           </div>
-          <h2 className="mt-2 text-xl sm:text-2xl xl:text-3xl md:pr-[180px] sm:text-left text-center">
+          <h2 className="mt-2 text-xl sm:text-2xl xl:text-3xl md:pr-[220px] sm:text-left text-center">
             Dom do wynajęcia w Wierzbicach k/ Kobierzyc, niedaleko Bielany
             Wrocławskie
           </h2>
