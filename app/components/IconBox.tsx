@@ -117,7 +117,7 @@ const IconBox: React.FC<IconBoxProps> = ({
             size={size || 32}
             className={twMerge("mr-3 sm:mr-6", iconClassName)}
           />
-          <p className={twMerge("", pClassName)}>+48 502 386 824</p>
+          <p className={twMerge("", pClassName)}>+48 504 501 125</p>
         </>
       )}
       {icon === "mail" && (
