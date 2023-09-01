@@ -46,8 +46,8 @@ export default function Home() {
           wszystkich jego udogodnień. Dodatkowo, w bezpośrednim sąsiedztwie
           znajdują się Bielany Wrocławskie, kilkanaście kilometrów dalej Kąty
           Wrocławskie. Dla pracowników, którzy muszą dojeżdżać do tych
-          miejscowości, nasz dom to doskonałe rozwiązanie. Obiekt jest dostępny
-          do wynajmu zarówno na dłuższy okres, jak i na pojedyncze noclegi.
+          miejscowości, nasz dom to świetne lokum. Obiekt jest dostępny do
+          wynajmu zarówno na dłuższy okres, jak i na pojedyncze noclegi.
           Jesteśmy elastyczni i gotowi dostosować się do Państwa potrzeb.
           Zapraszamy do kontaktu i wynajmu naszego domu, który z pewnością
           spełni Wasze oczekiwania!
@@ -60,15 +60,12 @@ export default function Home() {
             <div className=" bg-secondary h-40 w-full md:w-[600px] flex rounded-lg flex-wrap">
               <IconBox
                 icon="phone"
-                content="+48 504 501 125"
+                content={`+48 504 501 125`}
                 pClassName="w-full text-md sm:text-xl 2xl:text-2xl text-center mt-4 px-4 md:px-0"
                 iconClassName="mx-auto sm:mx-auto -rotate-45"
                 size={48}
                 containerClass="pl-0 pr-0 items-center justify-center w-full flex-wrap"
               />
-              <p className="text-center w-full text-md sm:text-xl text-main font-montserrat font-bold mb-2">
-                Numer telefonu
-              </p>
             </div>
             <Link
               href="https://www.facebook.com/eliza.major.18"

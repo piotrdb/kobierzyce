@@ -112,10 +112,13 @@ const IconBox: React.FC<IconBoxProps> = ({
         />
       )}
       {icon === "phone" && (
-        <FaPhoneVolume
-          size={size || 32}
-          className={twMerge("mr-3 sm:mr-6", iconClassName)}
-        />
+        <>
+          <FaPhoneVolume
+            size={size || 32}
+            className={twMerge("mr-3 sm:mr-6", iconClassName)}
+          />
+          <p className={twMerge("", pClassName)}>+48 502 386 824</p>
+        </>
       )}
       {icon === "mail" && (
         <GoMail
