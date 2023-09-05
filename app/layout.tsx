@@ -5,9 +5,10 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wynajem - Kobierzyce",
+  title:
+    "Wynajem - Kobierzyce | Kwatery pracownicze, lokale, noclegi niedaleko Bielan Wrocławskich",
   description:
-    "Wynajem mieszkania, lokali, noclegu w miejscowości Wiezrzbice, gmina Kobierzyce - niedaleko Bielany Wrocławskie, Kąty Wrocławskie i Wrocław. Krótkoterminowo i długoterminowo",
+    "Wynajem mieszkania, noclegu, lokalu w miejscowości Wiezrzbice, gmina Kobierzyce - niedaleko Bielany Wrocławskie, Kąty Wrocławskie i Wrocław.",
   colorScheme: "dark",
   keywords: ["Kobierzyce", "Wrocławskie", "Wynajem", "Nocleg"],
 };
