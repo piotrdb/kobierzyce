@@ -91,7 +91,6 @@ const PhotoGallery = () => {
   };
   const switchOverlay = () => {
     setOverlayOpened(!overlayOpened);
-    console.log(overlayOpened);
   };
 
   return (
@@ -109,15 +108,16 @@ const PhotoGallery = () => {
               src={image.path}
               alt={image.alt}
               fill
-              objectFit="cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
               className={twMerge(
-                "hover:scale-105 transition-all duration-500 rounded-lg",
+                "hover:scale-105 transition-all duration-500 rounded-lg object-cover",
                 image.class
               )}
               onClick={() => {
                 switchOverlay();
                 setPhotoId(id);
               }}
+              priority={image.path === "/img00.jpg"}
             />
           </div>
         ))}
@@ -128,7 +128,8 @@ const PhotoGallery = () => {
             src={images[photoId].path}
             alt={images[photoId].alt}
             fill
-            objectFit="cover"
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
           />
         </div>
         <div
@@ -154,8 +155,9 @@ const PhotoGallery = () => {
               <Image
                 src={images[photoId].path}
                 alt={images[photoId].alt}
-                objectFit="contain"
+                className="object-contain"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
               />
             </div>
             <div
