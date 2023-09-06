@@ -79,9 +79,9 @@ export default function Home() {
           </p>
         </div>
         <div className="w-full pt-6 md:pt-4 pb-4 md:pb-64">
-          <h6 className="text-4xl md:text-5xl font-righteous text-center">
+          <h3 className="text-4xl md:text-5xl font-righteous text-center">
             Informacje kontaktowe
-          </h6>
+          </h3>
           <div className="flex md:flex-row flex-col items-center justify-center gap-y-10 lg:gap-y-0 md:gap-x-2 lg:gap-x-16 xl:gap-x-32 mt-12 md:mt-20 lg::mt-36">
             <div className=" bg-secondary h-40 w-full md:w-[600px] flex rounded-lg flex-wrap">
               <IconBox
