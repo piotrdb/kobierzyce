@@ -9,7 +9,14 @@ export const metadata: Metadata = {
   description:
     "Wynajem mieszkania, noclegu, lokalu w miejscowości Wiezrzbice, gmina Kobierzyce - niedaleko Bielany Wrocławskie, Kąty Wrocławskie i Wrocław.",
   colorScheme: "dark",
-  keywords: ["Kobierzyce", "Wrocławskie", "Wynajem", "Nocleg", "Kwatery"],
+  keywords: [
+    "Kobierzyce",
+    "Wrocławskie",
+    "Wynajem",
+    "Nocleg",
+    "Kwatery",
+    "Mieszkanie",
+  ],
   openGraph: {
     title: "Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
     description:

@@ -2,22 +2,23 @@ import Link from "next/link";
 import ContactButton from "./components/ContactButton";
 import IconBox from "./components/IconBox";
 import PhotoGallery from "./components/PhotoGallery";
+import { TbH1 } from "react-icons/tb";
 
 export default function Home() {
   return (
     <div className="w-full bg-black min-h-[100vh] overflow-x-hidden">
       <div className="px-6 md:px-12 w-full max-w-[1536px] mx-auto text-secondary  ">
         <div className="w-full text-4xl md:text-5xl xl:text-6xl font-righteous py-12 flex flex-wrap justify-center sm:justify-between items-center ">
-          <h1 className="block w-full sm:w-auto sm:inline text-center sm:text-left">
+          <h2 className="block w-full sm:w-auto sm:inline text-center sm:text-left">
             Kobierzyce
-          </h1>
+          </h2>
           <div className="text-2xl sm:text-3xl lg:text-4xl order-1 sm:order-none">
             <ContactButton className="mt-4 mb-2 sm:my-0 px-4 py-2 md:px-6 md:py-3 bg-secondary text-main rounded-lg hover:bg-accent hover:drop-shadow-glow transition-all duration-500 hover:-translate-y-1" />
           </div>
-          <h2 className="mt-2 text-xl sm:text-2xl xl:text-3xl md:pr-[220px] sm:text-left text-center">
+          <h1 className="mt-2 text-xl sm:text-2xl xl:text-3xl md:pr-[220px] sm:text-left text-center">
             Dom do wynajęcia w Wierzbicach k/ Kobierzyc, niedaleko Bielany
             Wrocławskie
-          </h2>
+          </h1>
         </div>
         <PhotoGallery />
         <div className="mt-24 text-sm sm:text-md flex gap-y-3 justify-center gap-x-2 flex-wrap">
@@ -53,9 +54,9 @@ export default function Home() {
           spełni Wasze oczekiwania!
         </div>
         <div className="w-full pt-6 md:pt-4 pb-4 md:pb-64">
-          <h1 className="text-4xl md:text-5xl font-righteous text-center">
+          <h6 className="text-4xl md:text-5xl font-righteous text-center">
             Informacje kontaktowe
-          </h1>
+          </h6>
           <div className="flex md:flex-row flex-col items-center justify-center gap-y-10 lg:gap-y-0 md:gap-x-2 lg:gap-x-16 xl:gap-x-32 mt-12 md:mt-20 lg::mt-36">
             <div className=" bg-secondary h-40 w-full md:w-[600px] flex rounded-lg flex-wrap">
               <IconBox
