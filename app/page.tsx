@@ -9,9 +9,9 @@ export default function Home() {
     <div className="w-full bg-black min-h-[100vh] overflow-x-hidden">
       <div className="px-6 md:px-12 w-full max-w-[1536px] mx-auto text-secondary  ">
         <div className="w-full text-4xl md:text-5xl xl:text-6xl font-righteous py-12 flex flex-wrap justify-center sm:justify-between items-center ">
-          <h2 className="block w-full sm:w-auto sm:inline text-center sm:text-left">
+          <h1 className="block w-full sm:w-auto sm:inline text-center sm:text-left">
             Kobierzyce
-          </h2>
+          </h1>
           <div className="text-2xl sm:text-3xl lg:text-4xl order-1 sm:order-none">
             <ContactButton className="mt-4 mb-2 sm:my-0 px-4 py-2 md:px-6 md:py-3 bg-secondary text-main rounded-lg hover:bg-accent hover:drop-shadow-glow transition-all duration-500 hover:-translate-y-1" />
           </div>
