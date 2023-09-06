@@ -35,23 +35,48 @@ export default function Home() {
           <IconBox icon="laundry" content="Pralka" />
           <IconBox icon="tv" content="TV w każdym pokoju" />
         </div>
-        <div className="py-24 text-lg font-montserrat text-justify">
-          Zapraszamy do wynajmu domu wolnostojącego w Wierzbicach k/ Kobierzyc,
-          usytuowanych kilkanaście kilometrów od Wrocławia. Ten przestronny dom
-          to doskonałe rozwiązanie dla firm poszukujących komfortowych kwater
-          pracowniczych. Z łatwością pomieści do 12 osób, zapewniając wszystkim
-          komfortowy i przyjazny pobyt. Lokalizacja naszego domu to dobra okazja
-          dla pracujących w okolicznych miejscowościach. Wrocław jest oddalony
-          zaledwie o kilkanaście minut jazdy samochodem, dzięki czemu unikacie
-          Państwo codziennego zgiełku miejskiego, a jednocześnie macie dostęp do
-          wszystkich jego udogodnień. Dodatkowo, w bezpośrednim sąsiedztwie
-          znajdują się Bielany Wrocławskie, kilkanaście kilometrów dalej Kąty
-          Wrocławskie. Dla pracowników, którzy muszą dojeżdżać do tych
-          miejscowości, nasz dom to świetne lokum. Obiekt jest dostępny do
-          wynajmu zarówno na dłuższy okres, jak i na pojedyncze noclegi.
-          Jesteśmy elastyczni i gotowi dostosować się do Państwa potrzeb.
-          Zapraszamy do kontaktu i wynajmu naszego domu, który z pewnością
-          spełni Wasze oczekiwania!
+        <div className="pt-24 text-lg font-montserrat text-justify">
+          <p>
+            Zapraszamy do wynajmu domu wolnostojącego w Wierzbicach k/
+            Kobierzyc, usytuowanych kilkanaście kilometrów od Wrocławia. Ten
+            przestronny dom to doskonałe rozwiązanie dla firm poszukujących
+            komfortowych kwater pracowniczych. Z łatwością pomieści do 12 osób,
+            zapewniając wszystkim komfortowy i przyjazny pobyt. Lokalizacja
+            naszego domu to dobra okazja dla pracujących w okolicznych
+            miejscowościach. Wrocław jest oddalony zaledwie o kilkanaście minut
+            jazdy samochodem, dzięki czemu unikacie Państwo codziennego zgiełku
+            miejskiego, a jednocześnie macie dostęp do wszystkich jego
+            udogodnień. Dodatkowo, w bezpośrednim sąsiedztwie znajdują się
+            Bielany Wrocławskie, kilkanaście kilometrów dalej Kąty Wrocławskie.
+            Dla pracowników, którzy muszą dojeżdżać do tych miejscowości, nasz
+            dom to świetne lokum. Obiekt jest dostępny do wynajmu zarówno na
+            dłuższy okres, jak i na pojedyncze noclegi. Jesteśmy elastyczni i
+            gotowi dostosować się do Państwa potrzeb. Zapraszamy do kontaktu i
+            wynajmu naszego domu, który z pewnością spełni Wasze oczekiwania!
+          </p>
+        </div>
+        <div className="pt-12 pb-12 text-lg font-montserrat text-justify">
+          <p>
+            Nasz obiekt oferuje wygodne i funkcjonalne rozwiązania, aby zapewnić
+            komfortowy pobyt w trakcie ich zakwaterowania. Oto krótki opis
+            naszego obiektu: Nasz dwupiętrowy dom posiada cztery pokoje, co
+            pozwala na równoczesne zamieszkanie aż dwunastu osób. Każdy pokój
+            wyposażony jest w telewizor oraz zapewniamy darmowe Wi-Fi, aby nasi
+            goście mogli pozostać podłączeni do sieci i pracować zdalnie, jeśli
+            to konieczne. Na stanie domu znajduje się w pełni wyposażona kuchnia
+            oraz pralka. Nasi goście nie muszą się martwić o miejsce parkingowe,
+            ponieważ dostępne są kilka miejsc parkingowych, co jest szczególnie
+            ważne dla osób podróżujących własnymi samochodami. Ogród wokół domu
+            stanowi idealne miejsce na relaks w blasku słońca. Dla wygody
+            naszych gości, mamy trzy prysznice, co znacznie przyspiesza poranne
+            przygotowania do całego dnia. Dom jest wyposażony w centralne
+            ogrzewanie, zapewniające komfortowy klimat przez cały rok. Nasz
+            obiekt jest również monitorowany, co przyczynia się do zwiększenia
+            poczucia bezpieczeństwa - można powiedzieć, że zapewniamy wszystko,
+            co niezbędne do wygodnego i efektywnego pobytu. Serdecznie
+            zapraszamy do skorzystania z naszych lokali i gwarantujemy, że
+            poczują się Państwo u nas jak w domu.
+          </p>
         </div>
         <div className="w-full pt-6 md:pt-4 pb-4 md:pb-64">
           <h6 className="text-4xl md:text-5xl font-righteous text-center">
