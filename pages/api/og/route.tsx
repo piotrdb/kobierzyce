@@ -13,14 +13,13 @@ export async function GET(request: Request) {
     const hasTitle = searchParams.has("title");
     const title = hasTitle
       ? searchParams.get("title")?.slice(0, 100)
-      : "Default title";
+      : "Strona główna";
 
     return new ImageResponse(
       (
         <div
           style={{
-            backgroundImage:
-              "url(https://cruip-tutorials-next.vercel.app/social-card-bg.jpg)",
+            backgroundImage: "url(https://www.nocleg-kobierzyce.pl/img00.jpg)",
             backgroundSize: "100% 100%",
             height: "100%",
             width: "100%",
@@ -48,7 +47,7 @@ export async function GET(request: Request) {
           <img
             width="203"
             height="44"
-            src={`https://www.nocleg-kobierzyce.pl/favicon.ico`}
+            src={`https://www.nocleg-kobierzyce.pl/img00.jpg`}
           />
         </div>
       ),
