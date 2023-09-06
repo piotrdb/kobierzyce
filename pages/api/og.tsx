@@ -2,9 +2,9 @@ import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
 
-export async function GET(request: Request) {
+export default async function GET(request: Request) {
   const interExtrabold = fetch(
-    new URL("../../../public/Inter-ExtraBold.ttf", import.meta.url)
+    new URL("../../public/Inter-ExtraBold.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
 
   try {
@@ -19,7 +19,8 @@ export async function GET(request: Request) {
       (
         <div
           style={{
-            backgroundImage: "url(https://www.nocleg-kobierzyce.pl/img00.jpg)",
+            backgroundImage:
+              "url(https://www.nocleg-kobierzyce.pl/social-card-bg.jpg)",
             backgroundSize: "100% 100%",
             height: "100%",
             width: "100%",
@@ -47,7 +48,7 @@ export async function GET(request: Request) {
           <img
             width="203"
             height="44"
-            src={`https://www.nocleg-kobierzyce.pl/img00.jpg`}
+            src={`https://www.nocleg-kobierzyce.pl/social-card-title.png`}
           />
         </div>
       ),

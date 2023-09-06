@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://www.nocleg-kobierzyce.pl",
     images: [
       {
-        url: "https://www.nocleg-kobierzyce.pl/api/og?title=Generate Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
+        url: "https://www.nocleg-kobierzyce.pl/api/og?title= Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "Wynajem mieszkania, noclegu, lokalu w miejscowości Wiezrzbice, gmina Kobierzyce - niedaleko Bielany Wrocławskie, Kąty Wrocławskie i Wrocław.",
     images: [
-      "https://www.nocleg-kobierzyce.pl/api/og?title=Generate Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
+      "https://www.nocleg-kobierzyce.pl/api/og?title=Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
     ],
   },
 };
