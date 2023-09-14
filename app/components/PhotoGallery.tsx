@@ -117,7 +117,7 @@ const PhotoGallery = () => {
                 switchOverlay();
                 setPhotoId(id);
               }}
-              // priority={image.path === "/img00.jpg"}
+              priority={image.path === "/img00.jpg"}
             />
           </div>
         ))}
