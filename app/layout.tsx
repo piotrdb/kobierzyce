@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   colorScheme: "dark",
   keywords: [
     "kobierzyce",
-    "wrocławskie",
+    "bielany wrocławskie",
     "wynajem",
     "nocleg",
     "kwatery",
@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "noclegi",
     "pracownicze",
     "lokale",
+    "pokoje",
+    "pokój",
+    "wierzbice",
   ],
   openGraph: {
     title: "Wynajem - Kobierzyce | Kwatery pracownicze, lokale",
